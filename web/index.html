@@ -25,7 +25,7 @@
       document.getElementById('output').innerHTML = 'Mapping...';
       
       // Call Google Apps Script (free AI)
-      fetch('https://script.google.com/macros/s/AKfycbx.../exec?url=' + encodeURIComponent(url))
+      fetch('https://script.google.com/macros/s/AKfycbztDqAvo52ypR57qLF0LwLEf0AO7t8T3LZvA0LJ-6QrHMc1JTTOL3-30RB7JKOCWwub/exec' + encodeURIComponent(url))
         .then(r => r.json())
         .then(data => {
           const json = JSON.stringify(data, null, 2);
