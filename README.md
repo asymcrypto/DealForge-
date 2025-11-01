@@ -1,6 +1,9 @@
-# DealForge – Open-Source Sales OS  
-*Built by a 19-year-old in public. Clone. Run. Close.*
+# DealForge – Open-Source Sales OS
+*Built live by a 19-year-old. Clone. Run. Close.*
 
+**Tool #1 SHIPPED: AI Buying Committee Mapper**  
+→ Paste LinkedIn URL → Get 3 hidden decision-makers  
+→ [Use it now → reply on X](https://x.com/Asym_Alwali)
 ---
 
 **I’m 19. No network. No budget.**  
