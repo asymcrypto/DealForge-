@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DealForge Committee Mapper</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 20px; }
+    input, button { padding: 12px; margin: 10px; width: 90%; font-size: 16px; }
+    #output { margin-top: 20px; background: #f0f0f0; padding: 15px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>DealForge AI Committee Mapper</h1>
+  <p>Paste LinkedIn Company URL → Get 3 decision-makers</p>
+  <input type="text" id="url" placeholder="https://linkedin.com/company/acme">
+  <button onclick="map()">Map Now</button>
+  <div id="output">Result appears here...</div>
+
+  <script>
+    function map() {
+      const url = document.getElementById('url').value;
+      if (!url.includes('linkedin.com/company')) {
+        alert('Please paste a valid LinkedIn company URL');
+        return;
+      }
+      document.getElementById('output').innerHTML = 'Mapping...';
+      
+      // Call Google Apps Script (free AI)
+      fetch('https://script.google.com/macros/s/AKfycbx.../exec?url=' + encodeURIComponent(url))
+        .then(r => r.json())
+        .then(data => {
+          const json = JSON.stringify(data, null, 2);
+          document.getElementById('output').innerHTML = 
+            '<pre>' + json + '</pre><br><a href="data:text/json;charset=utf-8,' + 
+            encodeURIComponent(json) + '" download="committee.json">Download JSON</a>';
+        });
+    }
+  </script>
+</body>
+</html>
