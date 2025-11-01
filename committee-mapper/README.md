@@ -17,3 +17,21 @@
   {"name": "Mike Patel", "role": "Head of Revenue", "linkedin": "..."},
   {"name": "Lisa Kim", "role": "Procurement Lead", "linkedin": "..."}
 ]
+
+4. Scroll down → **Commit new file**
+
+---
+
+### STEP 3: CREATE `committee.json` (EXAMPLE OUTPUT)
+1. Tap **Add file** → **Create new file**  
+2. Name: `committee-mapper/committee.json`  
+3. Paste:
+
+```json
+[
+  {
+    "name": "Demo User",
+    "role": "Use this template",
+    "linkedin": "Paste your target here"
+  }
+]
